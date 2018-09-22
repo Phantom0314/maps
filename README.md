@@ -2,7 +2,7 @@
 git clone https://github.com/Phantom0314/maps.git
 cd maps
 
-Port: 8080
+URL: http://localhost:8080/
 
 To Start from CLI<br/>
 cd to project directory<br/>
