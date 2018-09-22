@@ -1,10 +1,14 @@
 package com.maps.model;
 
-public class SearchCriteria {
+import java.io.Serializable;
 
-    private String keyword;
-	private int latitude;
-	private int longitude;
+public class SearchCriteria implements Serializable {
+
+	private static final long serialVersionUID = 7702251968438283619L;
+	
+	private String keyword;
+	private String latitude;
+	private String longitude;
 	
 	public SearchCriteria() {}
 	
@@ -14,16 +18,19 @@ public class SearchCriteria {
 	public void setKeyword(String keyword) {
 		this.keyword = keyword;
 	}
-	public int getLatitude() {
+	public String getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(int latitude) {
+
+	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
-	public int getLongitude() {
+
+	public String getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(int longitude) {
+
+	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 }
