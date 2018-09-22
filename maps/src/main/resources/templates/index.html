@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      #map {
-        width: 100%;
-        height: 400px;
-        background-color: grey;
-      }
-      .searchInput {
-      	display: flex;
-      }
-    </style>
+  	<link rel="stylesheet" href="css/maps.css">
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&key=AIzaSyDVJuxExkq9Ks9Tc-gxvdaUZhS5I4btYl4"></script>
   	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   	<script src="js/maps.js"></script>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h2 class="header">Local Watering Holes</h2>
+    <div class="generalInformation">
+    	Each marker on the map, when selected, will provide information about that location. Below the map is information about each location displayed in a table to make finding the information even faster. 
+    </div>
     <br/>
-    <!--The div element for the map -->
     <div id="map"></div>
+    <div class="resultList"></div>
   </body>
 </html>

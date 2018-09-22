@@ -1,0 +1,19 @@
+#map {
+	width: 100%;
+  	height:450px;
+  	background-color: grey;
+}
+.header {
+	text-align: center;
+}
+
+.generalInformation {
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	font: 16px "Avenir", "Helvetica Neue", "Helvetica", sans-serif;
+}

@@ -21,6 +21,11 @@ public class PlaceServiceWorkhorse {
 	
 	private static final String API_KEY = "AIzaSyDVJuxExkq9Ks9Tc-gxvdaUZhS5I4btYl4";
 	
+	/*
+	 * Returns a string that contains information for bars with a 1500 radius
+	 * of the user's location
+	 * 
+	 */
 	public String search(SearchCriteria searchCriteria) throws Exception {
 		searchCriteria.setKeyword("bar");
 		HttpURLConnection httpURLConnection = null;
@@ -32,7 +37,7 @@ public class PlaceServiceWorkhorse {
 			urlBuilder.append(TYPE_SEARCH);
 			urlBuilder.append(OUT_JSON);
 			urlBuilder.append("&location=" + String.valueOf(searchCriteria.getLatitude()) + "," + String.valueOf(searchCriteria.getLongitude()));
-			urlBuilder.append("&radius=800");
+			urlBuilder.append("&radius=1500");
 			urlBuilder.append("&type=" + searchCriteria.getKeyword());
 			urlBuilder.append("&key=" + API_KEY);
 			
