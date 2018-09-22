@@ -4,11 +4,11 @@ cd maps
 
 Port: 8080
 
-To Start from CLI
-cd to project directory
+To Start from CLI<br/>
+cd to project directory<br/>
 mvnw spring-boot:run
 
-To Start from IDE
-Open in IDE
-Go to V1Application.java 
+To Start from IDE<br/>
+Open in IDE<br/>
+Go to V1Application.java <br/>
 Right click and select Run As -> Java Application. 
