@@ -22,6 +22,7 @@ public class PlaceServiceWorkhorse {
 	private static final String API_KEY = "AIzaSyDVJuxExkq9Ks9Tc-gxvdaUZhS5I4btYl4";
 	
 	public String search(SearchCriteria searchCriteria) throws Exception {
+		searchCriteria.setKeyword("bar");
 		HttpURLConnection httpURLConnection = null;
 		StringBuilder jsonResults = new StringBuilder();
 		

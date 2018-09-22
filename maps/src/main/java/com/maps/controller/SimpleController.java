@@ -20,9 +20,7 @@ public class SimpleController {
 	
 	@PostMapping(path = "/", produces = MediaType.APPLICATION_JSON_VALUE)
 	public String index(@RequestBody SearchCriteria searchCriteria) {
-		String searchResult = new String();
-		
-	
+		String searchResult = new String();	
 		try {
 			searchResult = placeServiceWorkhorse.search(searchCriteria);
 		} catch (Exception e) {
