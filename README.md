@@ -1,5 +1,5 @@
 # maps
-git clone https://github.com/Phantom0314/maps.git
+git clone https://github.com/Phantom0314/maps.git <br/>
 cd maps
 
 URL: http://localhost:8080/
